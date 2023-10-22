@@ -1,7 +1,7 @@
 let fizzes = 0;
 let buzzes = 0;
 let noMatches = 0;
-const fizzBuzz = (num: number) => {
+const simpleFizzBuzz = (num: number) => {
     if (num % 5 === 0) {
         ++fizzes;
         return 'Fizz!';
@@ -17,7 +17,7 @@ const fizzBuzz = (num: number) => {
 }
 
 for (let i = 0; i < 1000; ++i) {
-    console.log(fizzBuzz(i));
+    console.log(simpleFizzBuzz(i));
 }
 
 console.log('Number of Fizzes: ', fizzes);

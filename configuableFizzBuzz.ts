@@ -5,7 +5,7 @@ interface ConditionsProps {
 
 }
 
-const iterations = 100;
+const iterations = 1000;
 const conditions: ConditionsProps[] = [
     {name: 'Fizz!', divisibleBy: 5, count: 0},
     {name: 'Buzz!', divisibleBy: 7, count: 0},
@@ -13,26 +13,26 @@ const conditions: ConditionsProps[] = [
     {name: 'Zazz!', divisibleBy: 8, count: 0}
 ]
 let naMatches = 0;
-const fizzBuzz = (num: number) => {
+const configurableFizzBuzz = (num: number) => {
     let result = num as string | number;
 
     for (const condition of conditions) {
         if (num % condition.divisibleBy === 0) {
-            condition.count = condition.count + 1;
+            ++condition.count;
             result = condition.name;
             break;
         }
     }
 
     if (typeof result === 'number') {
-        naMatches = naMatches + 1;
+        ++naMatches;
     }
 
     return result;
 }
 
 for (let i = 0;  i < iterations; i++) {
-    const result = fizzBuzz(i);
+    const result = configurableFizzBuzz(i);
     console.log(result);
 }
 
