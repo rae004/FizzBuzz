@@ -5,6 +5,12 @@
     "configuableFizzBuzz": "bun configuableFizzBuzz.ts",
     "watchConfigurable": "bun --watch configuableFizzBuzz.ts",
     "simpleFizzBuzz": "bun simpleFizzBuzz.ts",
-    "watchSimple": "bun --watch simpleFizzBuzz.ts"
+    "watchSimple": "bun --watch simpleFizzBuzz.ts",
+    "worksheet": "bun worksheet.ts",
+    "watchWorksheet": "bun --watch worksheet.ts"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.7",
+    "typescript": "^5.2.2"
   }
 }
