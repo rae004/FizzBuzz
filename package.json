@@ -1,0 +1,10 @@
+{
+  "name": "bun-fizz-buzz",
+  "version": "1.0.0",
+  "scripts": {
+    "configuableFizzBuzz": "bun configuableFizzBuzz.ts",
+    "watchConfigurable": "bun --watch configuableFizzBuzz.ts",
+    "simpleFizzBuzz": "bun simpleFizzBuzz.ts",
+    "watchSimple": "bun --watch simpleFizzBuzz.ts"
+  }
+}
